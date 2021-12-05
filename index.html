@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Happy mother's day</title>
+    </head>
+    <style>
+        img {
+        
+            width: 300px;
+            height: 400px;
+        }
+        body {
+            background-image: url("https://wallpapercave.com/wp/gLCTnod.jpg");
+            color: white;
+        }
+        p {
+            font-size: 20px;
+        }
+        
+    </style>
+    <body>
+        <h1>Happy mother's Day!!</h1>
+        <div class="solution-tag-no1">
+            <img src="https://i.pinimg.com/736x/1c/eb/ff/1cebff7df27dc985f365399a29b28ff9.jpg">
+            <br>
+            <label>Enter your first name:</label>
+            <br>
+            <input type="text" id="firstName">
+            <br>
+            <br>
+            <label>Enter the name of your Child:</label>
+            <br>
+            <input type="text" id="nameOfCh">
+            <br>
+            <br>
+            <button onclick="DoTheDeed()">Submit</button>
+        </div>
+        <p id="solution"></p>
+    </body>
+    <script>
+        function DoTheDeed(){
+            
+            var firstNamee = document.getElementById("firstName").value;
+            var husbandChild = document.getElementById("nameOfCh").value;
+            document.getElementById("solution").innerText = `Hello ${firstNamee}, Happy mother's Day!! Hope you and ${husbandChild} have a great Mother's day!!`;
+
+        };
+
+    </script>
+</html>
